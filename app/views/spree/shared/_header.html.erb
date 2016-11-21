@@ -1,0 +1,62 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/shopping-cart">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping Cart
+                        <span class="badge">{{session.cart.totalQty}}</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> User Management <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Shop</a></li>
+                      <li><a href="#">Contact</a></li>
+                        {{# if login }}
+                            <li><a href="/user/profile">User Account</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="/user/logout">Logout</a></li>
+                        {{ else }}
+                            <li><a href="/user/signup">Sign Up</a></li>
+                            <li><a href="/user/signin">Sign In</a></li>
+                        {{/if}}
+                     </ul>
+                </li>
+            </ul>
+        </di
+   </div>
+ </nav> -->
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+              <li><a class="navbar-brand icon-home" href="/"><%= image_tag("/assets/logo.png") %></a></li>
+          </ul>
+            <ul class="nav navbar-nav">
+                <li><a href="/" class="active nav-link">Home</a></li>
+                <li><a href="/about" class="nav-link">About</a></li>
+                <li><a href="/product-info" class="nav-link">Product</a></li>
+                <li><a href="/products" class="nav-link">Shop</a></li>
+                <li><a href="/contact" class="nav-link">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
