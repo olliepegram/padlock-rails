@@ -13,6 +13,10 @@ gem 'bootstrap-sass', '~> 3.3.6'
 
 gem "font-awesome-rails"
 
+gem "solidus_braintree"
+
+gem "solidus_gateway"
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
